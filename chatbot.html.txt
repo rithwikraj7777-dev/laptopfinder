@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Laptop AI Chatbot</h2>
+
+<div id="chatbox"></div>
+
+<input type="text" id="userInput" placeholder="Ask about laptops...">
+<button onclick="sendMessage()">Send</button>
+
+<script>
+function sendMessage(){
+    let input = document.getElementById("userInput").value;
+    let chatbox = document.getElementById("chatbox");
+
+    chatbox.innerHTML += "<p><b>You:</b> " + input + "</p>";
+
+    let reply = "I will help you find the best laptop.";
+
+    if(input.toLowerCase().includes("gaming")){
+        reply = "You should look for RTX 4060 or higher gaming laptops.";
+    } else if(input.toLowerCase().includes("battery")){
+        reply = "Look for MacBook or Snapdragon X Elite laptops.";
+    } else if(input.toLowerCase().includes("student")){
+        reply = "Get a lightweight laptop with 16GB RAM and good battery.";
+    }
+
+    chatbox.innerHTML += "<p><b>AI:</b> " + reply + "</p>";
+}
+</script>
+
+</body>
+</html>

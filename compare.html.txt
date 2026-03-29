@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Laptops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Compare Laptops</h2>
+
+<select id="laptop1">
+    <option>Lenovo Legion 5</option>
+    <option>HP Omen 14</option>
+    <option>MacBook Pro</option>
+</select>
+
+<select id="laptop2">
+    <option>Lenovo Legion 5</option>
+    <option>HP Omen 14</option>
+    <option>MacBook Pro</option>
+</select>
+
+<button onclick="compare()">Compare</button>
+
+<div id="comparison"></div>
+
+<script>
+function compare(){
+    let l1 = document.getElementById("laptop1").value;
+    let l2 = document.getElementById("laptop2").value;
+
+    document.getElementById("comparison").innerHTML =
+        "<h3>" + l1 + " vs " + l2 + "</h3>" +
+        "<p>Detailed comparison coming soon.</p>";
+}
+</script>
+
+</body>
+</html>

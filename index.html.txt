@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LaptopFinder AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>LaptopFinder AI</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="finder.html">Find Laptop</a>
+        <a href="compare.html">Compare</a>
+        <a href="chatbot.html">AI Chatbot</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Find The Best Laptop For Your Budget</h2>
+    <p>Smart recommendations based on performance, battery, AI, and value.</p>
+    <a href="finder.html" class="btn">Start Finding</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>Smart Finder</h3>
+        <p>Find best laptop based on budget and features.</p>
+    </div>
+    <div class="card">
+        <h3>Compare Laptops</h3>
+        <p>Compare specs and performance.</p>
+    </div>
+    <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>Ask anything about laptops.</p>
+    </div>
+</section>
+
+</body>
+</html>
